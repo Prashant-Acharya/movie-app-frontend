@@ -25,7 +25,7 @@ const Carousel = () => {
 						</div>
 					</div>
 					<div className="carousel-item">
-						<img src="https://wallpaperaccess.com/full/25544.jpg" className="d-block w-100" alt="..." />
+						<img src="http://wallpapersdsc.net/wp-content/uploads/2016/08/Silicon-Valley-Images.jpg" className="d-block w-100" alt="..." />
 						<div className="carousel-caption d-none d-md-block">
 							<h5>Third slide label</h5>
 							<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
