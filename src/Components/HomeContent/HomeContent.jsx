@@ -1,13 +1,17 @@
 import React, { Component } from 'react'
+import Carousel from '../Carousel/Carousel'
+import Layout from '../Layout/Layout'
+
 
 class HomeContent extends Component {
 	state = {  }
 	render() { 
 		return (
-			<div>
-				<h3>Trending</h3>
-				<h3>Favourites</h3>
-			</div>
+			<Layout>
+				<Carousel />
+				<h1> Trending </h1>
+				<h1> Recent </h1>
+			</Layout>
 		);
 	}
 }

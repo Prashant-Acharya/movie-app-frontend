@@ -1,14 +1,15 @@
 import React, { Component } from 'react'
+import Layout from '../Layout/Layout'
 
 class Trending extends Component {
 	state = {  }
 	render() { 
-		return ( 
-			<div>
+		return (
+			<Layout>
 				<h1>Trending</h1>
-			</div>
-		 );
+			</Layout>
+		 )
 	}
 }
  
-export default Trending;
+export default Trending
