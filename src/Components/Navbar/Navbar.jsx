@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import './Navbar.css'
 
 class Navbar extends Component {
@@ -9,7 +9,7 @@ class Navbar extends Component {
 			<nav className="navbar navbar-inverse navbar-expand-lg bg-dark" style={{'margin': 0, 'border':'none'}}>
 				<div className="container">
 					<div className="navbar-translate">
-						<a className="navbar-brand" href="#0">Movie DB</a>
+						<Link className="navbar-brand" to='/home'>Movie DB</Link>
 					</div>
 
 					<div className="collapse navbar-collapse">
