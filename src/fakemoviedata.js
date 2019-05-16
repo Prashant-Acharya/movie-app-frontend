@@ -28,7 +28,7 @@ const movieData = [
 	},
 	{
 		id: 3,
-		title: 'Avengers End Game',
+		title: 'Hobbit',
 		release: '2019, April 26',
 		country: 'USA',
 		language: 'English',

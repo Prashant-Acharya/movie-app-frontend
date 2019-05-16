@@ -7,7 +7,7 @@ class Trending extends Component {
 	state = { movies: [] }
 
 	componentDidMount(){
-		const movies = [...movieData]
+		const movies = movieData
 		this.setState({
 			movies
 		})

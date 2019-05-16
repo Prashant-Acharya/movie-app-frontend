@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
-import Authentication from './Components/Authentication/Authentication'
+import Login from './Components/Authentication/Login'
+import SignUp from './Components/Authentication/SignUp'
 import Favourites from './Components/Favourites/Favourite'
 import HomeContent from './Components/HomeContent/HomeContent'
 import Trending from './Components/Trending/Trending'
@@ -11,7 +12,8 @@ class App extends Component {
 		return (
 			<BrowserRouter>
 				<Switch>
-					<Route exact path='/' component={Authentication} />
+					<Route exact path='/' component={Login} />
+					<Route path='/SignUp' component={SignUp} />
 					<Route path='/home' component={HomeContent} />
 					<Route path='/favourites' component={Favourites} />
 					<Route path='/trending' component={Trending} />

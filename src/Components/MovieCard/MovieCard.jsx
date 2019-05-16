@@ -2,11 +2,11 @@ import React from 'react'
 
 const MovieCard = ({ movie }) => {
 	return (
-		<div className='col-3'>
+		<div className='col-md-6 col-lg-3 col-sm-12'>
 			<div className="card">
 				<img className="card-img-top" src={movie.cover} alt="" />
 					<div className="card-body">
-						<div className='card-title'>{movie.title}</div>
+						<div className='card-title' style={{'fontSize': '1.2rem'}}>{movie.title}</div>
 						<div>
 							<strong>Casts:</strong> {movie.casts} <br/>
 							<strong>Release Date:</strong> {movie.release} <br/>
