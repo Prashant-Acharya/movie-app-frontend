@@ -21,6 +21,11 @@ class Navbar extends Component {
 					<div className="collapse navbar-collapse">
 						<ul className="navbar-nav ml-auto">
 							<li className="nav-item">
+								<NavLink to='/addmovie' className="nav-link">
+									+ Add
+								</NavLink>
+							</li>
+							<li className="nav-item">
 								<NavLink to='/trending' className="nav-link">
 									Trending
 								</NavLink>

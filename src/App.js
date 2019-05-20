@@ -6,6 +6,7 @@ import SignUp from './Components/Authentication/SignUp'
 import Favourites from './Components/Favourites/Favourite'
 import HomeContent from './Components/HomeContent/HomeContent'
 import Trending from './Components/Trending/Trending'
+import AddMovie from './Components/Add/AddMovie'
 
 class App extends Component {
 	render(){
@@ -17,6 +18,7 @@ class App extends Component {
 					<Route path='/home' component={HomeContent} />
 					<Route path='/favourites' component={Favourites} />
 					<Route path='/trending' component={Trending} />
+					<Route path='/addmovie' component={AddMovie} />
 				</Switch>
 			</BrowserRouter>
 		)

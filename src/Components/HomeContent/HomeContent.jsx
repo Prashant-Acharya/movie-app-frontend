@@ -1,17 +1,17 @@
 import React, { Component } from 'react'
 import Carousel from '../Carousel/Carousel'
 import Layout from '../Layout/Layout'
-import movieData from '../../fakemoviedata'
 import MovieCard from '../MovieCard/MovieCard'
+import axios from 'axios'
 
 class HomeContent extends Component {
 	state = { movies: [] }
 
-	componentDidMount(){
-		const movies = movieData
-		this.setState({
-			movies
-		})
+	async componentDidMount(){
+		const res = await axios('http://localhost:5000/allmovies')
+		const movies = [...res.data]
+		console.log(movies)
+		this.setState({movies})
 	}
 
 	render() {
@@ -21,14 +21,14 @@ class HomeContent extends Component {
 				<div>
 					<h4 className="title">Trending</h4>
 					<div className="row">
-						{this.state.movies.map(movie => <MovieCard movie={movie} key={movie.id}/>)}
+						{this.state.movies.map(movie => <MovieCard movie={movie} key={movie._id}/>)}
 					</div>
 				</div>
 
 				<div>
 					<h4 className="title">Discover</h4>
 					<div className="row">
-						{this.state.movies.map(movie => <MovieCard movie={movie} key={movie.id}/>)}
+						{this.state.movies.map(movie => <MovieCard movie={movie} key={movie._id}/>)}
 					</div>
 				</div>
 			</Layout>
